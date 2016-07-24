@@ -1,5 +1,7 @@
 # CrosswordSolver
 
+PLEASE READ THIS FILE IN RAW TEXT.
+
 This program was originally an assignment written in Racket.
 I decided to redo the assignment in Java so I had to restructure the program to make it object oriented.
 
