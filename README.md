@@ -7,7 +7,7 @@ I decided to redo the assignment in Java so I had to restructure the program to 
 
 To use this program,
 
-1. create a .txt file of the following format,
+1. create a .txt file of the following format, (there are sample puzzles provided)
 
       ;; comments must start with a semi colon.
       ;; this first number is the width of the board.
