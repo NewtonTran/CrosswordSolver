@@ -3,7 +3,7 @@ package crosswordSolverPackage;
 import java.util.ArrayList;
 
 /**
- * @classname Solver
+ * @classname State
  * @author Newton Tran
  * @description This class contains methods that will change the state of the crossword puzzle.
  */
@@ -161,15 +161,13 @@ public class State {
 		if (wordPosition.isHorizontal()) {
 			for (int i = 0; i < length; ++i) {
 				this.board.getBoard()[row][i + col] = wordArr[i];
-				this.board.updateTranspose();
 			}
 		} else {
 			for (int i = 0; i < length; ++i) {
 				this.board.getBoard()[i + row][col] = wordArr[i];
-				this.board.updateTranspose();
 			}
 		}
-		
+		this.board.updateTranspose();
 		for (int i = 0; i < this.wordsLeft; ++i) {
 			if (this.wordList.get(i).equals(word)) {
 				this.wordList.remove(i);
